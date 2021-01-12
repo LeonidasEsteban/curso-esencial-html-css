@@ -1,21 +1,40 @@
-html {
-  font-size: 16px;
+:root {
+  font-size: 18px;
+  --gray30: #212121;
+  --gray20: #212429;
+  --gray10: #616161;
 }
 
 body {
-  color: #212121;
+  color: var(--gray30);
 }
 
 a {
-  color: #212121;
+  color: var(--gray30);
 }
 
 header {
+  /* --gray10: red; */
   font-size: 14px;
+  color: var(--gray10);
 }
+
+header a {
+  color: var(--gray10);
+  text-decoration: none;
+}
+header a:hover {
+  color: var(--gray30);
+}
+
+nav details summary {
+  font-weight: bold;
+}
+
 
 h1 {
   font-size: 60px;
+  /* text-decoration: underline; */
   /* font-size: 3.75em; */
 }
 
