@@ -1,0 +1,31 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  color: #212121;
+}
+
+a {
+  color: #212121;
+}
+
+header {
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 60px;
+  /* font-size: 3.75em; */
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+
+
