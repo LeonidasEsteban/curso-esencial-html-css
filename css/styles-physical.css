@@ -77,9 +77,9 @@ h1 {
   margin: 30px 20px 10px; */
 }
 
-h1 ~ p {
+/* h1 + p {
   margin-bottom: 64px;
-}
+} */
 
 hr {
   margin: 64px 0;
