@@ -127,6 +127,31 @@ blockquote span::before {
   content: '-';
 }
 
+.main {
+  /* background-image: linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url('../images/pattern.png'); */
+}
+
+.wrapper {
+  width: 902px;
+  margin: auto;
+}
+
+.main-content {
+  /* background: blue; */
+  padding: 20px;
+  background: white;
+}
+
+.title {
+  background: red;
+}
+.services {
+  background: purple;
+}
+.pricing {
+  background: blue;
+}
+
 .debug {
   box-shadow: inset 0 0 0 1px red;
   outline: 1px solid red;
