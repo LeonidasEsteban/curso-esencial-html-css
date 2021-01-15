@@ -75,6 +75,7 @@ h1 {
   /* margin: 64px 10px 16px 20px;
   margin: 10px 5px;
   margin: 30px 20px 10px; */
+  /* border: 1px solid red; */
 }
 
 /* h1 + p {
@@ -125,6 +126,17 @@ blockquote span {
 blockquote span::before {
   content: '-';
 }
+
+.debug {
+  box-shadow: inset 0 0 0 1px red;
+  outline: 1px solid red;
+  background: red;
+  /* border: 1px solid red !important;
+  box-sizing: border-box; */
+}
+
+
+
 
 .hero {
   background-image: linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url('../images/pattern.png');
