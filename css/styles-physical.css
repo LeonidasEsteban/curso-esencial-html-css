@@ -101,10 +101,29 @@ h3 {
 
 pre {
   background: #FEC62E;
+  padding: 40px;
+  /* padding-left: 40px; */
+  font-family: 'Roboto';
+  line-height: 24px;
 }
 
 blockquote {
+  font-size: 24px;
   margin: 32px 0;
+  padding-left: 16px;
+  line-height: 24px;
+  /* border: 10px solid red; */
+  /* border-top: 1px solid pink; */
+  /* border-top-color: aqua; */
+  /* border-top-style: dashed; */
+  /* border-radius: 50px 100px 10px 0; */
+  border-left: 4px solid var(--gray30);
+}
+blockquote span {
+  color: var(--gray10);
+}
+blockquote span::before {
+  content: '-';
 }
 
 .hero {
@@ -141,10 +160,12 @@ blockquote {
 
 .section-content h3 {
   counter-increment: titleList;
+  /* background: red; */
+  padding-bottom: 4px;
 }
 
 .section-content h3::before {
-  content: counter(titleList, decimal);
+  content: counter(titleList, decimal) '. ';
 }
 
 .section-content h3::after {
