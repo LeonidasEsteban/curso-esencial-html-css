@@ -47,7 +47,27 @@ a {
 header {
   /* --gray10: red; */
   font-size: 14px;
+  width: 188px;
   color: var(--gray10);
+  position: absolute;
+  /* right: 0; */
+  /* bottom: 0; */
+  top: 64px;
+  left: -232px;
+  /* top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; */
+  /* margin: 50px; */
+  /* top left bottom right z-index */
+  /* top: 200px; */
+  /* left: 30px; */
+  /* right: 50px;
+  bottom: 100px; */
+  z-index: 1;
+  /* position: absolute;
+  position: fixed;
+  position: sticky; */
 }
 
 header a {
@@ -60,6 +80,11 @@ header a:hover {
 
 nav details summary {
   font-weight: bold;
+  line-height: ;
+}
+
+header li {
+  margin-bottom: 16px;
 }
 
 
@@ -69,6 +94,7 @@ h1 {
   /* font-size: 3.75em; */
   margin-top: 64px;
   margin-bottom: 16px;
+  font-weight: normal;
   /* margin-left: 20px;
   margin-right: 10px; */
   /* margin: top right bottom left; */
@@ -98,6 +124,9 @@ h3 {
   margin-top: 16px;
   margin-bottom: 24px;
   font-weight: normal;
+  position: sticky;
+  top: 0;
+  background: white;
 }
 
 pre {
@@ -126,7 +155,13 @@ blockquote span {
 blockquote span::before {
   content: '-';
 }
-
+.header {
+  position: sticky;
+  top: 0;
+}
+.header-content {
+  position: relative;
+}
 .main {
   /* background-image: linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url('../images/pattern.png'); */
 }
@@ -138,7 +173,7 @@ blockquote span::before {
 
 .main-content {
   /* background: blue; */
-  padding: 20px;
+  /* padding: 20px; */
   background: white;
 }
 
@@ -172,6 +207,7 @@ blockquote span::before {
 }
 .section-content {
   margin-top: 164px;
+  position: relative;
 }
 .section-content:first-of-type {
   margin: 0;
@@ -198,7 +234,7 @@ blockquote span::before {
 .section-content h3 {
   counter-increment: titleList;
   /* background: red; */
-  padding-bottom: 4px;
+  padding-bottom: 8px;
 }
 
 .section-content h3::before {
@@ -207,10 +243,13 @@ blockquote span::before {
 
 .section-content h3::after {
   content: '';
-  width: 32px;
+  width: 80px;
   height: 4px;
   background: var(--gray30);
   display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 /* ::selection {
