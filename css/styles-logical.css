@@ -108,6 +108,20 @@ pre {
   padding: 40px;
   overflow: auto;
   border-radius: 8px;
+  border: 10px solid red;
+  border-left: 5px solid blue;
+  border-inline-start: 5px solid white;
+  border-block-end: 20px solid pink;
+  border-inline-end: 5px solid green;
+  border-block-start-color: blue;
+  border: 10px solid #5551FF;
+  box-shadow: -10px 10px 0 0 #ABAAF6;
+  /* margin-block-end: 30px;
+  border-radius: 50%;
+  inline-size: 400px;
+  block-size: 400px; */
+  /* border-start-start-radius: 60px; */
+
 }
 
 p {
