@@ -37,6 +37,15 @@ body {
   color: var(--white30);
   font-family: 'Nunito', sans-serif;
   background: #251F24;
+  margin: 0;
+  /* writing-mode: vertical-lr; */
+  /* margin: 10px 10px 10px 10px; */
+  /* margin-inline: 100px; */
+  /* margin-block: 100px; */
+  /* margin-block-start: 50px; */
+  /* margin-block-end: 50px; */
+  /* margin: 0 100px; */
+  /* margin-block: ; */
   /* font-family: charter; */
 }
 
@@ -67,25 +76,38 @@ nav details summary {
 }
 
 h1, h2, h3 {
-  font-weight: normal;
+  /* font-weight: normal; */
 }
 
 h1 {
   font-size: 60px;
+  margin-block-start: 64px;
+  margin-block-end: 16px;
   /* text-decoration: underline; */
   /* font-size: 3.75em; */
 }
 
 h2 {
   font-size: 2em;
+  margin-block: 40px;
 }
 
 h3 {
   font-size: 1.5em;
+  font-weight: 600;
+  margin-block: 16px;
+}
+
+hr {
+  margin-block: 40px;
+  border-color: rgba(97, 97, 97, 0.2);
 }
 
 pre {
   background: var(--white10);
+  padding: 40px;
+  overflow: auto;
+  border-radius: 8px;
 }
 
 p {
@@ -101,6 +123,13 @@ p {
   height: 350px;
 }
 
+.section-content img {
+  margin-block-start: 40px;
+  display: block;
+  max-inline-size: 100%;
+  /* max-width: 100%; */
+}
+
 .section-content {
   counter-reset: titleList;
 }
@@ -110,17 +139,58 @@ p {
 }
 
 .section-content h3::before {
-  content: counter(titleList, decimal);
+  content: counter(titleList, decimal)'. ';
 }
 
-.section-content h3::after {
+/* .section-content h3::after {
   content: '';
   width: 32px;
   height: 4px;
   background: var(--white30);
   display: inline-block;
+} */
+
+blockquote {
+  margin-block-start: 80px;
+  margin-block-end: 63px;
+  background-color: var(--white10);
+  border-radius: 8px;
+  line-height: 32px;
+  font-size: 24px;
+  /* padding: 24px; */
+  padding-inline-end: 24px;
+  padding-inline-start: 24px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
+}
+blockquote p {
+  color: var(--white30);
 }
 
 /* ::selection {
   background: green;
 } */
+
+.main hr {
+  display: none;
+}
+
+.main {
+  /* padding: 10px; */
+  /* border: 1px solid red; */
+}
+
+.wrapper {
+  /* border: 1px solid yellow; */
+  max-inline-size: 902px;
+  /* max-width: 902px; */
+  /* block-size: 100px; */
+  /* overflow: auto; */
+  margin: auto;
+  /* width: ; */
+}
+
+.main-content {
+  padding-inline: 16px;
+  /* border: 1px solid blue; */
+}
