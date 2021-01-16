@@ -52,15 +52,41 @@ body {
 a {
   color: var(--white30);
 }
+.header {
+  position: sticky;
+  inset-block-start: -45px;
+  /* background: red;
+  position: fixed; */
+  /* inset: 50px; */
+  /* inset-inline: 50px; */
+  /* inset-block: 50px; */
+  /* block-size: 500px; */
+  /* inline-size: 500px; */
+}
+.header-content {
+  position: relative;
+  inset-block-start: 65px;
 
+}
 header {
   /* --white10: red; */
   font-size: 14px;
   color: var(--white);
+  position: absolute;
+  /* top */
+  inset-block-start: 0;
+  /* bottom  */
+  /* inset-block-end: ; */
+  /* left  */
+  inset-inline-start: -208px;
+  /* right  */
+  /* inset-inline-end: ; */
+  inline-size: 188px;
 }
 
 header li {
   color: var(--white20);
+  margin-block-end: 16px;
 }
 
 header a {
@@ -83,6 +109,8 @@ h1 {
   font-size: 60px;
   margin-block-start: 64px;
   margin-block-end: 16px;
+  /* text-align: justify;
+  font-size: 20px; */
   /* text-decoration: underline; */
   /* font-size: 3.75em; */
 }
